@@ -42,13 +42,14 @@ The App icon of BOT Classic is property of Planck Studio.
 
 If you plan to publish this app in Google Play Store than following terms should be strictly followed.
 
+- Purchase all the source code.
 - Before publishing app change App icon, App name , package name and all links related to Planck Studio
 - Host Api in your domain
 - Make app free to use or you can't charge enduser for any part of code [ BOT Classic Code api and android ] used in your new app
 
 ## Support
 
-Fell free to contact us at [support@planckstudio.in](mailto:support@planckstudio.in)
+Feel free to contact us at [support@planckstudio.in](mailto:support@planckstudio.in)
 
 Our website [https://planckstudio.in](https://planckstudio.in/?utm_medium=github)
 
