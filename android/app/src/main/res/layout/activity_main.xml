@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_header"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/colorTheme"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_bot_white"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/contactus_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_header"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="-32dp"
+        android:layout_marginEnd="32dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:text="CONTACT US"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactus_btn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:textColor="@color/colorText"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Instagram"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <LinearLayout
+                            style="@style/ToolCardOuterLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/ig_items_dp"
+                                style="@style/ToolCardView">
+
+                                <LinearLayout style="@style/ToolCardInnerLayout">
+
+                                    <ImageView
+                                        style="@style/OpenToolImageView"
+                                        android:src="@drawable/ic_ig_dp"
+                                        tools:ignore="ContentDescription,TooDeepLayout"
+                                        app:tint="@color/colorTheme" />
+                                </LinearLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textColor="@color/colorText"
+                                style="@style/ToolTitleTextView"
+                                android:text="HD DP"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/ToolCardOuterLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/ig_items_dl"
+                                style="@style/ToolCardView">
+
+                                <LinearLayout style="@style/ToolCardInnerLayout">
+
+                                    <ImageView
+                                        app:tint="@color/colorTheme"
+                                        style="@style/OpenToolImageView"
+                                        android:src="@drawable/ic_ig_dl"
+                                        tools:ignore="ContentDescription" />
+                                </LinearLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textColor="@color/colorText"
+                                style="@style/ToolTitleTextView"
+                                android:text="Download"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:textColor="@color/colorText"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Youtube"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <LinearLayout
+                            style="@style/ToolCardOuterLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/yt_items_dl"
+                                style="@style/ToolCardView">
+
+                                <LinearLayout style="@style/ToolCardInnerLayout">
+
+                                    <ImageView
+                                        app:tint="@color/colorTheme"
+                                        style="@style/OpenToolImageView"
+                                        android:src="@drawable/ic_yt_dl"
+                                        tools:ignore="ContentDescription" />
+                                </LinearLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textColor="@color/colorText"
+                                style="@style/ToolTitleTextView"
+                                android:text="Download"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:textColor="@color/colorText"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:text="Crafted in India"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:textColor="@color/colorText"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="v 1.0.0"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

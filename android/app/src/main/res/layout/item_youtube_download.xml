@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardElevation="0dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                android:id="@+id/type_holder"
+                app:backgroundTint="@color/colorPrimary"
+                android:layout_width="64dp"
+                android:layout_height="64dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_videocam_24"
+                    android:id="@+id/yt_image_type"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    app:backgroundTint="@color/colorPrimary"
+                    tools:ignore="ContentDescription" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/type_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/colorText"
+                    android:id="@+id/recent_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="value"
+                    android:layout_marginStart="8dp"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:textColor="@color/colorText"
+                    android:id="@+id/recent_caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="value"
+                    android:textAllCaps="true"
+                    android:layout_marginStart="8dp"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/yt_save_video_btn"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOWNLOAD"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/colorPrimary"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+
+        <View
+            android:visibility="invisible"
+            android:id="@+id/recent_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorDivider"
+            android:alpha=".16"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

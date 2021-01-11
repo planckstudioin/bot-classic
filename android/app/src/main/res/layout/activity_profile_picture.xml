@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorBackground"
+    tools:context=".ui.instagram.ProfilePictureActivity">
+
+    <include
+        android:visibility="visible"
+        android:id="@+id/dp_image_holder"
+        layout="@layout/card_imageholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_below="@id/dp_image_holder"
+        android:id="@+id/ig_dp_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:visibility="visible"
+        android:id="@+id/ig_profile_box"
+        app:cardCornerRadius="16dp"
+        android:layout_below="@+id/dp_image_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                app:boxBackgroundColor="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_ig_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@color/colorTheme"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:padding="16dp"
+                android:text="GET PROFILE PICTURE"
+                app:backgroundTint="@color/colorTheme"
+                app:cornerRadius="0dp"
+                app:elevation="0dp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/save_ig_profile_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="16dp"
+        android:text="SAVE TO GALLERY"
+        app:cornerRadius="0dp"
+        app:elevation="0dp"
+        tools:ignore="HardcodedText"
+        app:backgroundTint="@color/colorTheme"/>
+</RelativeLayout>

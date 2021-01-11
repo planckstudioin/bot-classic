@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BOT Classic</string>
+    <string name="ig_dp_api_endpoint">https://api.planckstudio.in/bot/public/classic/profile.php</string>
+    <string name="ig_dl_single_api_endpoint">https://api.planckstudio.in/bot/public/classic/media.php</string>
+    <string name="ig_dl_all_api_endpoint">https://api.planckstudio.in/bot/public/classic/allmedia.php</string>
+    <string name="yt_dl_api_endpoint">https://api.planckstudio.in/bot/public/classic/youtube.php</string>
+</resources>
